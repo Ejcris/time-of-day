@@ -59,7 +59,7 @@
 		<h1 class="masthead">Time of Day</h1>
 	</header>
     <main>
-	 <header><h3>Time of Day Assignment by EJ Crisanto</h3></header>
+	 <header><h3>A Time of Day Assignment by EJ Crisanto</h3></header>
 	 <h2 id="greeting">Greeting Goes Here</h2>
 	 <p>This web page uses JavaScript to determine the current hour,
 		  and presents a different image, custom message, and color 
@@ -80,7 +80,7 @@
       <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
       </small>
     </footer>
-    <script>
+	<script>
 		//we're using the Date() object
 		let myDate = new Date();
 
@@ -102,23 +102,19 @@
 			myColor = "orange";
 			myPic = "images/morning.jpg";
 		
-		
 		}else if(myHours >= 12 && myHours < 18){
-		
 			myText = "Good Afternoon!";
 			myColor = "green";
 			myPic = "images/afternoon.jpg";
-
-			if(myHours >= 18 && myHours <= 23 ){
+		}else if(myHours >= 18 && myHours < 23){
 			myText = "Good Evening!";
-			myColor = "Blue";
-			myPic = "images/afternoon.jpg";
-		
-		
+			myColor = "blue";
+			myPic = "images/evening.jpg";
+
 		}else{
-			myText = "Good Afternoon!";
-			myColor = "green";
-			myPic = "images/afternoon.jpg";
+			myText = "Good Night!";
+			myColor = "black";
+			myPic = "images/night.jpg";
 		}
 
 		console.log(myHours);
@@ -145,4 +141,5 @@
 		//console.log(myCopyright);
 	</script>
 </body>
+
 </html>
